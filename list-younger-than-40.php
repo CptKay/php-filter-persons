@@ -24,7 +24,7 @@
       </tr>
     </thead>
     <tbody>
-      <?php writeAllPersons(); ?>
+      <?php writeYoungerThan40(); ?>
     </tbody>
   </table>
 </body>

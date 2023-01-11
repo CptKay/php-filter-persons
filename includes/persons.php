@@ -61,15 +61,69 @@ define("PERSONS", array(
     
     // TODO);
 
-// print_r(PERSONS);
-
+    // prettyPrint(PERSONS);
 
 function writeAllPersons() {
-    foreach("Persons" as $x => $val){
-        echo "$x = $val<br>";
+    $personCount = count(PERSONS);
+    for ($p = 0; $p < $personCount; $p++) {
+        $person = PERSONS[$p];
+
+
+        $firstName = $person["firstName"];
+        $lastName = $person["lastName"];
+        $age = $person["age"];
+        $country = $person["country"];
+    
+
+        echo "<tr><td>$firstName</td><td>$lastName</td><td>$age</td><td>$country</td></tr>";
+
+
     }
-}
+};
 
+function writeYoungerThan40() {
+    $personCount = count(PERSONS);
+    for ($p = 0; $p < $personCount; $p++) {
+        $person = PERSONS[$p];
 
+if ( $person["age"] <= 40 ) {
+
+        $firstName = $person["firstName"];
+        $lastName = $person["lastName"];
+        $age = $person["age"];
+        $country = $person["country"];
+    
+    
+
+    echo "<tr><td>$firstName</td><td>$lastName</td><td>$age</td><td>$country</td></tr>";
+
+        }    
+    }
+};
+
+function writeNonSwiss() {
+    $personCount = count(PERSONS);
+    for ($p = 0; $p < $personCount; $p++) {
+        $person = PERSONS[$p];
+
+if ( $person["age"] < 30 && $person["country"] !== "Schweiz" ) {
+
+        $firstName = $person["firstName"];
+        $lastName = $person["lastName"];
+        $age = $person["age"];
+        $country = $person["country"];
+    
+    
+
+    echo "<tr><td>$firstName</td><td>$lastName</td><td>$age</td><td>$country</td></tr>";
+
+        }    
+    }
+};
+    
+    
+
+/* foreach(PERSONS as $key => $value) {
+    echo "$key[0]->First Name: $value<br>"; */
 
 ?>
