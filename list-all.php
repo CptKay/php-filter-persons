@@ -11,6 +11,7 @@
 </head>
 <body>
 <?php
+    include "includes/tools.php";
     include "includes/persons.php";  
 ?>
 <table class="table">
@@ -18,16 +19,14 @@
       <tr>
         <th>Firstname</th>
         <th>Lastname</th>
-        <th>Email</th>
+        <th>Age</th>
+        <th>country</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <?php // writeAllPersons(); ?>
+      <?php writeAllPersons();
+
+      ?>
     </tbody>
   </table>
 </body>

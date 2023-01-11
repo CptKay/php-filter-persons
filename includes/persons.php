@@ -6,7 +6,9 @@
     !! Prüfen: Eine PHP-Konstante hat kein '$' Symbol am Anfang.
     !! die Personen aus dem JavaScript Array (unten) in PHP übernehmen
 */
-define("PERSONS", array(
+
+
+ define ("Persons",array(
     array(
         "firstName" => "Peter",
         "lastName" => "Towers",
@@ -41,25 +43,46 @@ define("PERSONS", array(
         "lastName"=> "Keller",
         "age"=> 30,
         "country"=> "Deutschland"
-    ),array( 
-    "firstName"=>"Hanspeter",
-    "lastName"=> "Schröder",
-    "age"=> 42,
-    "country"=> "Deutschland"
-),array(
-    "firstName"=> "Emilio",
-    "lastName"=> "Sottorno",
-    "age"=> 40,
-    "country"=> "Italien"
-),array(
-    "firstName"=> "Robert",
-    "lastName"=> "Graveur",
-    "age"=> 54,
-    "country"=> "Frankreich"
-)));
+    ),
+    array( 
+        "firstName"=>"Hanspeter",
+        "lastName"=> "Schröder",
+        "age"=> 42,
+        "country"=> "Deutschland"
+    ),
+    array(
+        "firstName"=> "Emilio",
+        "lastName"=> "Sottorno",
+        "age"=> 40,
+        "country"=> "Italien"
+    ),
+    array(
+        "firstName"=> "Robert",
+        "lastName"=> "Graveur",
+        "age"=> 54,
+        "country"=> "Frankreich"
+    )
+ ));
     
     // TODO);
 
-print_r(PERSONS);
+//prettyPrint(Persons);
+
+function writeAllPersons(){
+    $personCount = count(Persons);
+
+    for ($p = 0; $p < $personCount; $p++) {
+        $person = Persons[$p]; ;
+        $firstName = $person["firstName"];
+        $lastName = $person["lastName"];
+        $age = $person["age"];
+        $country = $person["country"]; 
+    
+    echo "<tr><td>$firstName</td><td>$lastName</td><td>$age</td><td>$country</td></tr>";  
+
+    }
+   
+
+}
 
 ?>
