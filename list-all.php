@@ -11,7 +11,8 @@
 </head>
 <body>
 <?php
-    include "includes/persons.php";  
+    include "includes/persons.php";
+    include "includes/tools.php";  
 ?>
 <table class="table">
     <thead>
