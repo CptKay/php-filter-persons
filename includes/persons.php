@@ -42,11 +42,12 @@ define("PERSONS", array(
         "age"=> 30,
         "country"=> "Deutschland"
     ),array( 
-    "firstName"=>"Hanspeter",
+        "firstName"=>"Hanspeter",
     "lastName"=> "Schröder",
     "age"=> 42,
     "country"=> "Deutschland"
-),array(
+    ),
+    array(
     "firstName"=> "Emilio",
     "lastName"=> "Sottorno",
     "age"=> 40,
@@ -60,6 +61,15 @@ define("PERSONS", array(
     
     // TODO);
 
-print_r(PERSONS);
+// print_r(PERSONS);
+
+
+function writeAllPersons() {
+    foreach("Persons" as $x => $val){
+        echo "$x = $val<br>";
+    }
+}
+
+
 
 ?>

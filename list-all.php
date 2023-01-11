@@ -28,7 +28,7 @@
         <td>52</td>
         <td>USA</td>
       </tr>
-      <?php // writeAllPersons(); ?>
+      <?php writeAllPersons(); ?>
     </tbody>
   </table>
 </body>
