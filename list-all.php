@@ -18,15 +18,15 @@
     <thead>
       <tr>
         <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
+        <th>Age</th>
+        <th>Country</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <td>52</td>
+        <td>USA</td>
       </tr>
       <?php // writeAllPersons(); ?>
     </tbody>
