@@ -21,7 +21,7 @@ l2: In list-all.php die Tabelle inklusive Beschriftung so anpassen, dass Vorname
     Nachname, Alter und Land pro Zeile und in dieser Reihenfolge angezeigt werden.
 
 ## persons.php
-p1: In persons.php die Konstate "PERSONS" fertig mit den darin vorgegebenen
+p1: In persons.php die Konstante "PERSONS" fertig mit den darin vorgegebenen
     Personendaten abfüllen.
 
 p2: function writeAllPersons() deklarieren und folgende Aktionen einbauen:
