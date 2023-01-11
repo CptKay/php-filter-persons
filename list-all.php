@@ -15,6 +15,7 @@
     include "includes/persons.php";  
 ?>
 <table class="table">
+<h1>List of All People</h1>
     <thead>
       <tr>
         <th>Firstname</th>
@@ -24,9 +25,35 @@
       </tr>
     </thead>
     <tbody>
-      <?php writeAllPersons();
-
-      ?>
+      <?php writeAllPersons();?>
+    </tbody>
+</table>
+<table class="table">
+    <thead>
+   <tr>
+   <h1>Younger Than 40</h1>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>country</th>
+      </tr>
+      </thead>    
+    <tbody>
+      <?php writeYoungerThan40();?>
+    </tbody>
+  </table>
+  <table class="table">
+    <thead>
+   <tr>
+   <h1>Young non Swiss</h1>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>country</th>
+      </tr>
+      </thead>    
+    <tbody>
+      <?php writeYoungerNonSwiss();?>
     </tbody>
   </table>
 </body>

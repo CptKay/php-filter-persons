@@ -81,8 +81,37 @@ function writeAllPersons(){
     echo "<tr><td>$firstName</td><td>$lastName</td><td>$age</td><td>$country</td></tr>";  
 
     }
-   
-
 }
+function writeYoungerThan40() {
+    $personCount = count(Persons);
 
+    for ($p = 0; $p < $personCount; $p++) {
+        $person = Persons[$p];
+
+        if ( $person["age"] <= 40 ) {
+        $firstName = $person["firstName"];
+        $lastName = $person["lastName"];
+        $age = $person["age"];
+        $country = $person["country"]; 
+    
+    echo "<tr><td>$firstName</td><td>$lastName</td><td>$age</td><td>$country</td></tr>";  
+}    
+}
+}
+function writeYoungerNonSwiss() {
+    $personCount = count(Persons);
+
+    for ($p = 0; $p < $personCount; $p++) {
+        $person = Persons[$p];
+
+        if ( $person["age"] < 30 && $person["country"] !== "Schweiz" ) {
+        $firstName = $person["firstName"];
+        $lastName = $person["lastName"];
+        $age = $person["age"];
+        $country = $person["country"]; 
+    
+    echo "<tr><td>$firstName</td><td>$lastName</td><td>$age</td><td>$country</td></tr>";  
+}    
+}
+}
 ?>
